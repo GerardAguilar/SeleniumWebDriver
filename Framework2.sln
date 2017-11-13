@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework2", "Framework2\Framework2.csproj", "{69645E21-DABF-4795-A669-797D76B61BCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QtpTests", "QtpTests\QtpTests.csproj", "{4C9B05D5-B74C-46D3-A749-2CA8A1F6D9EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework2Tests", "Framework2Tests\Framework2Tests.csproj", "{02DD97D8-085E-413A-8AA1-F0449115BB60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{69645E21-DABF-4795-A669-797D76B61BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69645E21-DABF-4795-A669-797D76B61BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69645E21-DABF-4795-A669-797D76B61BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C9B05D5-B74C-46D3-A749-2CA8A1F6D9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C9B05D5-B74C-46D3-A749-2CA8A1F6D9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C9B05D5-B74C-46D3-A749-2CA8A1F6D9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C9B05D5-B74C-46D3-A749-2CA8A1F6D9EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02DD97D8-085E-413A-8AA1-F0449115BB60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DD97D8-085E-413A-8AA1-F0449115BB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DD97D8-085E-413A-8AA1-F0449115BB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DD97D8-085E-413A-8AA1-F0449115BB60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
