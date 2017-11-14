@@ -55,7 +55,7 @@
     <Compile Include="Pages\BrowserTestsPage.cs" />
     <Compile Include="Pages\EditProfilePage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
-    <Compile Include="Pages\MyMembership.cs" />
+    <Compile Include="Pages\MyMembershipPage.cs" />
     <Compile Include="Pages\Pages.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -9,7 +9,7 @@ namespace Framework2
     public static class Browser
     {
         private static IWebDriver _webDriver;
-        private static string _baseUrl = "http://www.qtptutorial.net/";
+        private static string _baseUrl = "http://www.pathofexile.com/";
 
         public static void Goto(string url, bool useBaseUrl = true)
         {
@@ -31,8 +31,10 @@ namespace Framework2
         internal static void SwitchTabs(int tabIndex)
         {
             var windows = _webDriver.WindowHandles;
-
-            _webDriver.SwitchTo().Window(windows[tabIndex]);
+            if (windows.Count > 1)
+            {
+                _webDriver.SwitchTo().Window(windows[tabIndex]);
+            }
         }
 
         internal static bool WaitUntilELementIsDisplayed(By element, int timeoutInSeconds)

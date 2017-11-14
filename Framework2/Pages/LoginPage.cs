@@ -7,23 +7,23 @@ namespace Framework2.Pages
     {
         public void Goto()
         {
-            Browser.Goto("/wp-login.php");
+            Browser.Goto("login");
         }
 
         public void Login(string userName, string password)
         {
-            var user = Browser.FindElement(By.Id("user_login"));
+            var user = Browser.FindElement(By.Id("login_email"));
             user.Clear();
             user.SendKeys(userName);
             //SendKeys("user_login", userName);
 
-            var pass = Browser.FindElement(By.Id("user_pass"));
+            var pass = Browser.FindElement(By.Id("login_password"));
             pass.Clear();
             pass.SendKeys(password);
             //SendKeys("user_pass", password);
 
             //ClickButton("wp-submit");
-            Browser.FindElement(By.Id("wp-submit")).Click();
+            Browser.FindElement(By.Id("login_submit")).Click();
 
         }
 
@@ -40,7 +40,8 @@ namespace Framework2.Pages
         public string ErrorMessage()
         {
             //display error
-            var errorMessage = Browser.FindElement(By.Id("login_error")).Text;
+            //var errorMessage = Browser.FindElement(By.Id("login_error")).Text;
+            var errorMessage = Browser.FindElement(By.XPath(".//*[contains(text(),'Invalid Login')]")).Text;
             return errorMessage;
         }
 

@@ -10,21 +10,21 @@ namespace QtpTests
     public class ValidUserCanSuccessfullyAccessEditProfilePage : TestBase
     {
         [TestMethod]
-        public void RunTest() 
+        public void GivenValidUser_SuccessfullyLogin() 
         {
             Pages.Login.Goto();
-            Pages.Login.Login("gerardaguilar", "R1singWind!");
+            Pages.Login.Login("gerard.aguilar@live.com", "EmberMachina1!");
             Assert.IsTrue(Pages.MyMembership.IsAt(), "A valid user was not able to successfully log in.");
 
             Pages.MyMembership.EditProfile();
-            Assert.IsTrue(Pages.EditProfile.IsAt(), "The user was not able to view the Edit Profile page");
+            //Assert.IsTrue(Pages.EditProfile.IsAt(), "The user was not able to view the Edit Profile page");
         }
 
         [TestMethod]
-        public void RunTest2()
+        public void GivenInvalidUser_UnsuccessfullyLogin()
         {
             Pages.Login.Goto();
-            Pages.Login.Login("gerardaguilar", "R1singWind!");
+            Pages.Login.Login("invaliduser", "EmberMachina1!");
             Assert.IsTrue(Pages.Login.ErrorLogin(), "A valid user name did not lead to the error login page.");
             
         }

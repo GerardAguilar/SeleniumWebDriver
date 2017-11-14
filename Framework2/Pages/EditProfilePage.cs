@@ -12,6 +12,9 @@ namespace Framework2.Pages
             //(Browser.Title.Contains("My Membership"));
             By element = By.XPath(".//h1[contains(text(),'Edit Profile')]");
             if (!Browser.WaitUntilELementIsDisplayed(element, 3)) {
+                
+
+
                 Browser.SwitchTabs(1);
             }           
             return Browser.WaitUntilELementIsDisplayed(element, PAGE_LOAD_TIMEOUT);
